@@ -36,5 +36,5 @@ RUN case "${TARGETPLATFORM}" in \
     mv /opt/jdk/${ZULU_TAR} /opt/jdk/zulu17 && \
     rm ./${ZULU_TAR}.tar.gz
 
-ENV MAVEN_HOME="/opt/maven/apache-maven-3.8.2"
 ENV JAVA_HOME="/opt/jdk/zulu17"
+ENV PATH="$JAVA_HOME/bin:$PATH"
